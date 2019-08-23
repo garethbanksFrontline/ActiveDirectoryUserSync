@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FrontlineActiveDirectoryTest" Class="UpdateUsersDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=GBSQL2014;Initial Catalog=FrontlineActiveDirectoryTest;User ID=sa" SettingsObjectName="ActiveDirectoryServices.Properties.Settings" SettingsPropertyName="FrontlineActiveDirectoryTestConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.InsertOrUpdateUser" Method="InsertOrUpdateUser">
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="UserName" Parameter="userName" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="DisplayName" Parameter="displayName" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="Department" Parameter="department" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="Division" Parameter="division" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="IsMapped" Parameter="isMapped" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="AccountControl" Parameter="accountControl" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="Manager" Parameter="manager" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="Timesheet" Parameter="timesheet" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
